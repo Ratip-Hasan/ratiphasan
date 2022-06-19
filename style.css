@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenir {
+    width: 75%;
+    margin: 60px auto;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 30px;
+    font-family: 'Mitr', sans-serif;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.move,
+.social_communication {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+.links ul {
+    background: #888;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    display: none;
+    position: absolute;
+}
+
+.links ul li {
+    list-style-type: none;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 3px;
+
+
+}
+
+.links ul li:hover {
+    background: white;
+}
+.links ul li a:hover{
+    color:rgb(0, 0, 0)
+}
+
+.links ul li a {
+    color: rgb(255, 254, 254);
+
+}
+.links:hover ul {
+    display: block;
+    z-index: 2;
+    animation: topToBottom 1s ;
+}
+@keyframes topToBottom{
+    from{
+        height: 0px;
+        
+    }
+    to{
+        height:108px;
+
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.string h1 {
+    font-size: 50px;
+        
+}
+
+.string h1 span {
+    margin-left: 30px;
+}
+
+.string p {
+    margin-left: 70px;
+    line-height: 22px;
+    font-size: 17px;
+
+}
+
+.string {
+    width: 520px;
+}
+
+.myfoto {
+    width: 220px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0px 5px 20px #aaa, 0px -5px 20px #aaa;
+}
+
+.social_communication {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1300px) {
+    .links ul {
+        right: 15%;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .myfoto {
+        width: 325px;
+        
+        margin-bottom: 20px;
+
+    }
+}
+
+@media (max-width:780px) {
+    .contenir {
+        width: 85%;
+    }
+
+    .string h1 {
+        font-size: 40px;
+
+    }
+
+    .string {
+        width: 90%;
+    }
+
+    .string p {
+        margin-left: 0px;
+    }
+
+    .move,
+    .social_communication {
+        width: 66%;
+    }
+
+    .social_communication a {
+        margin-right: 30px;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .contenir {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .links ul {
+        right: 6%;
+    }
+
+}
